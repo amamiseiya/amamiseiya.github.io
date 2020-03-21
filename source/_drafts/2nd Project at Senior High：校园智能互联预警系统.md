@@ -14,7 +14,7 @@ categories:
 
 如图所示。
 
-![](media/15055637606511/project2.jpg)
+![](media/project2.jpg)
 
 智能小车收集图像，任意终端可定向发送警报消息。
 

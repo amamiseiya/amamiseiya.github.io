@@ -11,7 +11,7 @@ categories:
 
 最基本的，一定要设定一个去执行的时间。
 回看了一下我高三时，刚刚有了“智能生活”的想法时的计划。
-![UNADJUSTEDNONRAW_thumb_1fca.fca9fd267eff41b7855d6a426093f0-w280](media/15304319495553/UNADJUSTEDNONRAW_thumb_1fca.fca9fd267eff41b7855d6a426093f0c2.jpg)
+![OmniFocus-不当的规划-w280](media/OmniFocus-不当的规划.jpg)
 
 很不好的规划。
 仅仅是规划了，在哪一个宽泛的时间段，要做什么宽泛的事。

@@ -1,7 +1,6 @@
 {
   "name" : "source",
   "fileExtension" : ".md",
-  "autoUploadInsertedImageKey" : "sm.ms-https:\/\/sm.ms\/api\/upload\/",
   "autoUploadInsertedImage" : false,
   "folderType" : 11,
   "mediaFloder" : "media",

@@ -43,7 +43,7 @@ categories:
 
 所以爆出这样的新闻，只不过是时间早晚的问题。
 
-> ![](media/15055640180310/Getting-Lost-in-New-Epoch.png)
+> ![](media/Getting-Lost-in-New-Epoch.png)
 > 
 > 笔戈科技 - 360 叕被下架了？借此我们回顾一下全家桶祖师爷的黑历史
 > 
