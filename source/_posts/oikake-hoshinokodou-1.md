@@ -101,8 +101,3 @@ LoveLive动画的评论区有提到《轻音少女》，出于好奇，高二开
 
 高中到大学，是我人生中一个巨大转变。
 我于二次元的故事，也将迎来一个新篇章。
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA0MzQ1NDEsNjU1ODI0MDA0LC0xMD
-c5OTYyMDAzLC0xNzc5NDQxMjY5LC0xODI4ODg2MDcxLC0zNTEz
-NzE0NTNdfQ==
--->

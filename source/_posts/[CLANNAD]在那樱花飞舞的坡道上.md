@@ -1,7 +1,9 @@
 ---
 title: 《CLANNAD》在那樱花飞舞的坡道上
-date:
+date: 2016-07-24 00:00:00
 tags:
+- CLANNAD
+- 动漫
 categories:
 - 二次元
 - 观后感

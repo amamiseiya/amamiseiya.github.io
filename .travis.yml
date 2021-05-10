@@ -18,7 +18,7 @@ after_script:
   - git config user.name "Amami Seiya"
   - git config user.email "knifemule@gmail.com"
   - git add .
-  - git commit -m "Updated documents"
+  - git commit -m "Documents updated"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 # E: Build LifeCycle
 
