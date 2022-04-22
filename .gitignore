@@ -1,0 +1,6 @@
+**/.vscode/
+**/.MWebMetaData/
+**/.DS_Store
+public/
+**/*.pyc
+node_modules/
