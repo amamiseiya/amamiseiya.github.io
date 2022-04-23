@@ -1,0 +1,56 @@
+name: Hexo Deployment
+
+on:
+  push:
+    branches: [hexo] # only push events on source branch trigger deployment
+
+jobs:
+  hexo-deployment:
+    runs-on: ubuntu-latest
+    environment: github-pages
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+
+    - name: Substitute LeanCloud secrets
+      uses: microsoft/variable-substitution@v1
+      with:
+        files: 'themes/next/_config.yml'
+      env:
+        valine.appid: ${{ secrets.LEANCLOUD_ID }}
+        valine.appkey: ${{ secrets.LEANCLOUD_KEY }}
+        leancloud_visitors.appid: ${{ secrets.LEANCLOUD_ID }}
+        leancloud_visitors.appkey: ${{ secrets.LEANCLOUD_KEY }}
+
+    - name: Install dependencies & Generate static files
+      run: |
+        node -v
+        npm i -g hexo-cli
+        npm i
+        hexo clean
+        hexo g
+
+    - name: Deploy to Github Pages
+      env:
+        GIT_NAME: Amami Seiya
+        GIT_EMAIL: knifemule@gmail.com
+        REPO: github.com/amamiseiya/amamiseiya.github.io.git
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        cd ./public && git init && git add .
+        git config --global user.name $GIT_NAME
+        git config --global user.email $GIT_EMAIL
+        git commit -m "Site deployed by GitHub Actions"
+        git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
+
+# Reference: https://zhuanlan.zhihu.com/p/137867759

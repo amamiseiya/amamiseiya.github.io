@@ -1,3 +1,12 @@
+---
+title: Log等
+date:
+tags:
+categories:
+  - 摄影与视频
+  - 宅舞录制教程
+---
+
 HLG
 
 为什么我们需要在前期就做好这些设置？
