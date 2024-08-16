@@ -1,0 +1,6 @@
+[readingProgress]
+  enable = true
+[pace]
+  enable = true
+[page.toc]
+  enable = true
