@@ -1,6 +1,34 @@
+[author]
+  name = "天海星夜"
+[home.profile]
+  enable = true
+  title = "天海星夜"
+  subtitle = "二次元偶像企划厨/视频创作者/已作为日本社畜重开"
+  avatarURL = "images/author_avatar.jpg"
 [readingProgress]
   enable = true
+[social]
+  GitHub = "amamiseiya"
+  Twitter = "amami_seiya"
+  Instagram = "amamiseiya"
+  Telegram = ""
+  Youtubelegacy = ""
+  Youtubecustom = ""
+  Youtubechannel = ""
+  Weibo = "amamiseiya"
+  Steam = ""
+  Zhihu = ""
+  Bilibili = "13605233"
+  QQ = "1311877311"
+  Phone = ""
+  Email = ""
+  RSS = true
 [pace]
   enable = true
+[page.comment.valine]
+  enable = true
+  appId = "LEANCLOUD_ID"
+  appKey = "LEANCLOUD_KEY"
+  requiredFields = ["nick"]
 [page.toc]
   enable = true
