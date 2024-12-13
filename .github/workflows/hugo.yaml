@@ -30,21 +30,39 @@ defaults:
 jobs:
   # Build job
   build:
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.132.0
+      HUGO_VERSION: 0.139.4
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+      # - name: Install Python and tomlkit
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y python3 python3-pip
+      #     pip3 install tomlkit
+      # - name: Update TOML with tomlkit
+      #   run: |
+      #     python3 -c "
+      #     import tomlkit
+      #     from pathlib import Path
+      #     file = Path('config/_default/params.toml')
+      #     doc = tomlkit.parse(file.read_text())
+      #     doc['page']['comment']['valine']['appId'] = '${{ secrets.LEANCLOUD_ID }}'
+      #     doc['page']['comment']['valine']['appKey'] = '${{ secrets.LEANCLOUD_KEY }}'
+      #     file.write_text(tomlkit.dumps(doc))
+      #     "
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -59,7 +77,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
