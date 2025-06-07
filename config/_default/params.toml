@@ -4,7 +4,7 @@
   enable = true
   title = "天海星夜"
   subtitle = "二次元偶像企划厨/视频创作者/已作为日本社畜重开"
-  avatarURL = "images/author_avatar.jpg"
+  avatarURL = "/images/author_avatar.jpg"
 [readingProgress]
   enable = true
 [social]
